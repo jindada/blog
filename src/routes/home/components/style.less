@@ -1,0 +1,67 @@
+.home {
+  margin: 0;
+  .page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    &:nth-of-type(1) {
+      background-image: url('https://unsplash.it/1024/683?random&_t=1');
+    }
+    &:nth-of-type(2) {
+      background-image: url('https://unsplash.it/1024/683?random&_t=2');
+    }
+    &:nth-of-type(3) {
+      background-image: url('https://unsplash.it/1024/683?random&_t=3');
+    }
+    &:nth-of-type(4) {
+      background-image: url('https://unsplash.it/1024/683?random&_t=4');
+    }
+    .index {
+      .header{
+        border-right: 2px solid #f04134;
+        padding: 0 32px;
+        .title {
+          font-size: 64px;
+          font-family: monospace;
+          font-weight: 600;
+          span {
+            &:nth-of-type(1) {
+              color: #fff;
+              padding-right: 32px; 
+            }
+            &:nth-of-type(2) {
+              color: #f04134;
+            }
+          }
+        }
+        .describe {
+          font-size: 18px;
+          font-family: monospace;
+          text-align: right;
+          color: #fff;
+        }
+      }
+      .footer {
+        padding: 16px 32px 16px 0;
+        text-align: right;
+        & button {
+          margin: 0 4px;
+        }
+      }
+    }
+    .down {
+      padding-bottom: 8px;
+      position: absolute;
+      bottom: 0;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+    } 
+  }
+}

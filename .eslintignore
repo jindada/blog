@@ -1,0 +1,7 @@
+node_modules/**
+dist/**
+*.spec.js
+*.min.js
+mock.js
+src/index.html
+webpack.*.js
