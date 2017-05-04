@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'dva';
 import { Icon, Button, Tooltip } from 'antd';
 import style from './style.less';
+import { Link } from 'dva/router'
 /**
  * Stateless Functional 无状态函数组件写法
  */
@@ -37,9 +38,9 @@ const Home = ({dispatch, location, home}) => {
               </a>
             </Tooltip>
             <Tooltip title="进入 blog">
-              <a href="/#/blog">
+              <Link to="/blog">
                 <Button icon="arrow-right" ghost />
-              </a>
+              </Link>
             </Tooltip>
           </div>
         </div>
