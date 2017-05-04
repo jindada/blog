@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.prod.js --progress",
-    "start": "webpack-dev-server --config webpack.config.dev.js --devtool eval --port 8989 --host 0.0.0.0 --hot --progress --open",
-    "lint": "./node_modules/eslint/bin/eslint.js --color --config .eslintrc src/*"
+    "start": "webpack-dev-server --config webpack.config.dev.js --devtool eval --port 8989 --host localhost --hot --progress --open",
+    "lint": "node_modules/eslint/bin/eslint.js --color --config .eslintrc src/*"
   },
   "keywords": [],
   "author": "",
