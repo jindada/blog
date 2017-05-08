@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
-
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     devtool: 'source-map',
@@ -29,6 +29,7 @@ module.exports = {
          }
     },
     plugins: [
+        new ExtractTextPlugin('style.css'),
         new webpack.optimize.CommonsChunkPlugin('vendor',  'vendor.js'),
     ],
     module:{
@@ -48,11 +49,11 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: 'style!css'
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader")
             },
             {
                 test: /\.less$/,
-                loader: 'style!css?modules&localIdentName=[path][name][local][hash:base64:5]!postcss!less'
+                loader: "style!css?modules&localIdentName==[path][local][hash:base64:5]!postcss!less" // ExtractTextPlugin.extract("style-loader", "css-loader?modules&localIdentName==[path][local][hash:base64:5]", "less-loader")
             },
             {
                 test: /\.(png|jpg)$/,

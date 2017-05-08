@@ -5,6 +5,8 @@ var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlug
 var CompressionPlugin = require("compression-webpack-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+console.log(ExtractTextPlugin);
+
 module.exports = {
     entry:{
         app:[
@@ -61,7 +63,7 @@ module.exports = {
             },
             {
                 test: /\.less$/,
-                loader: ExtractTextPlugin.extract("style-loader", "css-loader?modules&localIdentName=[name][local][hash:base64:5]", "postcss-loader", "less-loader")
+                loader: "style!css?modules&localIdentName==[path][local][hash:base64:5]!postcss!less" // ExtractTextPlugin.extract("style-loader", "css-loader?modules&localIdentName==[path][local][hash:base64:5]", "less-loader")
             },
             {
                 test: /\.(png|jpg)$/,
