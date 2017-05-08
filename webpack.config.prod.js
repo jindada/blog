@@ -1,6 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+var CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
     entry:{
@@ -8,20 +10,33 @@ module.exports = {
             'babel-polyfill',
             path.resolve(__dirname,'src/index.js')
         ],
-		vendor: ['react', 'react-dom', 'dva', 'babel-polyfill', 'classnames'],
+        vendor: ['react', 'react-dom', 'dva', 'babel-polyfill', 'classnames'],
     },
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
-        }),
-		new webpack.optimize.CommonsChunkPlugin('vendor',  'vendor.js')
-    ],
     output:{
         path:path.resolve(__dirname),
         filename:'bundle.js'
     },
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': '"production"'
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            comments: false,        // 去掉注释
+            compress: {
+                warnings: false     // 忽略警告
+            }
+        }),
+        new webpack.optimize.CommonsChunkPlugin('vendor',  'vendor.js'),
+        new BundleAnalyzerPlugin(),
+        new webpack.optimize.AggressiveMergingPlugin(),
+        new CompressionPlugin({
+            asset: "[path].gz[query]",
+            algorithm: "gzip",
+            test: /\.js$|\.css$|\.html$/,
+            threshold: 10240,
+            minRatio: 0
+        })
+    ],
     module:{
         loaders:[
             {
