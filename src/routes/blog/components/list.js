@@ -3,26 +3,13 @@ import { Table, Tag, Icon } from 'antd';
 import uuid from 'uuidjs';
 import { labelColor } from '../../../config';
 
-const List = () => {
-	const dataSource = [{
-	  key: '1',
-	  title: 'React组件生命周期过程说明',
-	  labels: ['react'],
-	  stars: 5,
-	  update_time: '2017-05-05 09:07:23'
-	}, {
-	  key: '2',
-	  title: '理解 Babel 插件',
-	  labels: ['babel', 'babel-plugin'],
-	  stars: 3,
-	  update_time: '2017-05-05 09:07:23'
-	}];
+const List = ({ loading, listData }) => {
 
 	const columns = [{
 	  title: '标题',
 	  dataIndex: 'title',
 	  key: 'title',
-	  render: (text) => <a>{ text }</a> 
+	  render: (text, record) => <a href={ record.href } target="_blank">{ text }</a> 
 	}, {
 	  title: '分类标签',
 	  dataIndex: 'labels',
@@ -45,7 +32,7 @@ const List = () => {
 	};
 
 	return (
-	  <Table dataSource={dataSource} columns={columns} showHeader={false} pagination={pagination} />
+	  <Table loading={loading} dataSource={listData} columns={columns} showHeader={false} pagination={pagination} />
 	)
 }
 

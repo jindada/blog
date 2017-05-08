@@ -28,12 +28,12 @@ const Home = ({dispatch, location, home}) => {
           </div>
           <div className={ style.footer }>
             <Tooltip title="前往 Github">
-              <a href="https://github.com/jindada">
+              <a href="https://github.com/jindada" target="_blank">
                 <Button icon="github" ghost />
               </a>
             </Tooltip>
             <Tooltip title="赏颗星星吧">
-              <a href="https://github.com/jindada/blog">
+              <a href="https://github.com/jindada/blog" target="_blank">
                 <Button icon="star" ghost />
               </a>
             </Tooltip>
@@ -49,13 +49,13 @@ const Home = ({dispatch, location, home}) => {
         </div>
       </div>
       <div className={ style.page }>
-        <p>Dva</p>
+        <p></p>
       </div>
       <div className={ style.page }>
-        <p>Antd</p>
+        <p></p>
       </div>
       <div className={ style.page }>
-        <p>Dora</p>
+        <p></p>
       </div>
     </div>
   );
