@@ -3,6 +3,7 @@ var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
 var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 var CompressionPlugin = require("compression-webpack-plugin");
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry:{
@@ -23,19 +24,21 @@ module.exports = {
         new webpack.optimize.UglifyJsPlugin({
             comments: false,        // 去掉注释
             compress: {
-                warnings: false     // 忽略警告
+                unused: true,
+                dead_code: true,
+                warnings: false
             }
         }),
         new webpack.optimize.CommonsChunkPlugin('vendor',  'vendor.js'),
-        new BundleAnalyzerPlugin(),
-        new webpack.optimize.AggressiveMergingPlugin(),
         new CompressionPlugin({
             asset: "[path].gz[query]",
             algorithm: "gzip",
             test: /\.js$|\.css$|\.html$/,
             threshold: 10240,
             minRatio: 0
-        })
+        }),
+        new ExtractTextPlugin('style.css'),
+        new BundleAnalyzerPlugin(),
     ],
     module:{
         loaders:[
@@ -45,7 +48,7 @@ module.exports = {
                 include:[ path.resolve(__dirname,'src') ],
                 test:/\.(js|jsx)$/,
                 query:{
-                    plugins:['transform-runtime', ["import", {
+                    plugins:['transform-runtime', ['import', {
                         "libraryName": "antd",
                         "style": "css",
                     }]],
@@ -54,11 +57,11 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: 'style!css'
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader")
             },
             {
                 test: /\.less$/,
-                loader: 'style!css?modules&localIdentName=[path][name][local][hash:base64:5]!postcss!less'
+                loader: ExtractTextPlugin.extract("style-loader", "css-loader?modules&localIdentName=[name][local][hash:base64:5]", "postcss-loader", "less-loader")
             },
             {
                 test: /\.(png|jpg)$/,
