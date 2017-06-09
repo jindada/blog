@@ -5,7 +5,7 @@
 
 #### [你不知道的 javascript（上卷）](https://github.com/jindada/blog/issues/4)   2017-06-09
 
-> ### `那些不能说的秘密系列`
+### `那些不能说的秘密系列`
 
 #### [那些不能说的秘密 es6篇](https://github.com/jindada/blog/issues/2)   2017-06-08
 
