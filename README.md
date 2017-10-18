@@ -13,9 +13,9 @@
 
 #### `那些不能说的秘密系列`
 
-##### [那些不能说的秘密 es6篇](https://github.com/jindada/blog/issues/2)
+##### [点滴记录 es6](https://github.com/jindada/blog/issues/2)
 
-##### [那些不能说的秘密 react篇](https://github.com/jindada/blog/issues/3)
+##### [点滴记录 react](https://github.com/jindada/blog/issues/3)
 
-##### [那些不能说的秘密 javascript篇](https://github.com/jindada/blog/issues/5)
+##### [点滴记录 javascript](https://github.com/jindada/blog/issues/5)
 
