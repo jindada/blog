@@ -1,5 +1,8 @@
 ## Blog
 
+### Flutter
+
+##### [flutter i18n 国际化](https://github.com/jindada/blog/issues/12)
 
 ##### [使用sinopia搭建私有npm服务](https://github.com/jindada/blog/issues/1)
 
