@@ -1,6 +1,6 @@
 ## Blog
 
-### Flutter
+### flutter
 
 ##### [flutter i18n 国际化](https://github.com/jindada/blog/issues/12)
 
