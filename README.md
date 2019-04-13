@@ -6,7 +6,7 @@
 
 [flutter如何支持多点触控和缩放](https://github.com/jindada/blog/issues/10)
 
-[flutter canvas 如何获取clip后的图片]()
+[flutter canvas 如何获取clip后的图片](https://github.com/jindada/blog/issues/15)
 
 [flutter physics](https://github.com/jindada/blog/issues/13)
 
