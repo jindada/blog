@@ -24,7 +24,7 @@
 
 [使用sinopia搭建私有npm服务](https://github.com/jindada/blog/issues/1)
 
-### plan
+### canvas
 
 [如何判断点是否在贝塞尔曲线上]()
 
