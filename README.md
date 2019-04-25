@@ -4,9 +4,13 @@
 
 [flutter i18n 国际化](https://github.com/jindada/blog/issues/12)
 
-[flutter如何支持多点触控和缩放](https://github.com/jindada/blog/issues/10)
+[flutter 如何支持多点触控和缩放](https://github.com/jindada/blog/issues/10)
 
 [flutter canvas 如何获取clip后的图片](https://github.com/jindada/blog/issues/15)
+
+[flutter 自定义slider]()
+
+[flutter 颜色选择器]()
 
 [flutter physics](https://github.com/jindada/blog/issues/13)
 
