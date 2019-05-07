@@ -12,6 +12,8 @@
 
 [flutter 颜色选择器]()
 
+[flutter 插件开发]()
+
 [flutter physics](https://github.com/jindada/blog/issues/13)
 
 [flutter 实际开发中遇到的一些坑](https://github.com/jindada/blog/issues/14)
