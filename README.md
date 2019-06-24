@@ -4,7 +4,9 @@
 
 [微前端如何落地？](https://mp.weixin.qq.com/s/I2Y4N0hwugNV2d6Zk6AdMg)
 
-### flutter
+### 个人博客
+
+#### flutter
 
 [flutter i18n 国际化](https://github.com/jindada/blog/issues/12)
 
@@ -22,15 +24,15 @@
 
 [flutter 实际开发中遇到的一些坑](https://github.com/jindada/blog/issues/14)
 
-### react
+#### react
 
 [react-router 从 v2/v3 to v4 迁移（翻译）](https://github.com/jindada/blog/issues/6)
 
-### other
+#### other
 
 [使用sinopia搭建私有npm服务](https://github.com/jindada/blog/issues/1)
 
-### canvas
+#### canvas
 
 [如何判断点是否在贝塞尔曲线上]()
 
