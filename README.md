@@ -3,7 +3,11 @@
 ### 记录读过的好文(不仅仅是技术...)
 
 [微前端如何落地？](https://mp.weixin.qq.com/s/I2Y4N0hwugNV2d6Zk6AdMg)
+
 [失业下的深圳中年](https://media.weibo.cn/article?id=2309634382387550190645&display=0&retcode=6102)
+
+[用 react-window 做长列表渲染，非常顺滑。](https://web.dev/virtualize-long-lists-react-window)
+
 
 ### 个人博客
 
