@@ -8,6 +8,9 @@
 
 [用 react-window 做长列表渲染，非常顺滑。](https://web.dev/virtualize-long-lists-react-window)
 
+[优秀前端工程师的自检清单](https://mp.weixin.qq.com/s/nf6_-BM1d6jLkmFmigYJ3g)
+
+[]()
 
 ### 个人博客
 
