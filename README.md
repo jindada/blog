@@ -38,6 +38,7 @@
 
 #### other
 
+[串行Promise的实现](https://github.com/jindada/blog/issues/16)
 [使用sinopia搭建私有npm服务](https://github.com/jindada/blog/issues/1)
 
 #### canvas
