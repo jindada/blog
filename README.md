@@ -14,7 +14,6 @@
 
 [React Hooks 会取代 Redux 吗？](https://www.infoq.cn/article/EzeULAM0q8uZeJTWy*rH)
 
-[]()
 
 ### 个人博客
 
