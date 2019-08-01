@@ -10,6 +10,10 @@
 
 [优秀前端工程师的自检清单](https://mp.weixin.qq.com/s/nf6_-BM1d6jLkmFmigYJ3g)
 
+[领域驱动设计在前端中的应用](https://github.com/Vincedream/ddd-fe-demo)
+
+[React Hooks 会取代 Redux 吗？](https://www.infoq.cn/article/EzeULAM0q8uZeJTWy*rH)
+
 []()
 
 ### 个人博客
